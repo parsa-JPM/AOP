@@ -8,11 +8,11 @@ import org.aspectj.lang.annotation.Pointcut;
 public class EmployeeAspectPointcut {
 
 
-//    @Before("getNamePointcut()")
-//    public void loggingAdvice() {
-//        System.out.println("Executing loggingAdvice on getName()");
-//    }
-//
+    @Before("getNamePointcut()")
+    public void loggingAdvice() {
+        System.out.println("Executing loggingAdvice on getName()");
+    }
+
 
     @Before("getNamePointcut()")
     public void secondAdvice() {
@@ -23,13 +23,13 @@ public class EmployeeAspectPointcut {
     public void getNamePointcut() {
     }
 
-//    @Before("allMethodsPointcut()")
-//    public void allServiceMethodsAdvice() {
-//        System.out.println("Before executing service method");
-//    }
-//
-//    //Pointcut to execute on all the methods of classes in a package
-//    @Pointcut("within(service.*)")
-//    public void allMethodsPointcut() {
-//    }
+    @Before("allMethodsPointcut()")
+    public void allServiceMethodsAdvice() {
+        System.out.println("Before executing service method");
+    }
+
+    //Pointcut to execute on all the methods of classes in a package
+    @Pointcut("within(service.*)")
+    public void allMethodsPointcut() {
+    }
 }
