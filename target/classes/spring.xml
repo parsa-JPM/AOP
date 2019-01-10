@@ -16,7 +16,10 @@
         <property name="employee" ref="employee"/>
     </bean>
 
+
+
     <!-- Configure Aspect Beans, without this Aspects advices wont execute -->
+
     <bean name="employeeAspect" class="aspect.EmployeeAspect" />
 
     <!--it didn't work(because for @pointcut)-->
